@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "JetBrains Mono", monospace;
+}
+
+header{
+    display: flex;
+    height: 45px;
+    /*position: fixed;*/
+    color: white;
+}
+header nav ul{
+    display: flex;
+    margin-left: 50%;
+    list-style: none;
+    background-color: #13293D;
+    position: fixed;
+}
+
+header nav ul li{
+    padding-left: 10%;
+}
+
+header a{
+    text-decoration: none;
+    color: #18435A;
+
+}
+
+section{
+    height: 100vh;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container h2{
+    margin-top: 2%;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+}
+.Container p, ul{
+    margin-top: 2%;
+    font-size: 1.5rem;
+}
+
+footer {
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+
+/* Sections */
+#intro {
+    background-color: #058C42;
+}
+#about{
+    background-color: #13293D;
+}
+#contact{
+    background-color: rgba(170, 255, 187, 0.58);
+}
