@@ -2,35 +2,38 @@
     padding: 0;
     margin: 0;
     font-family: "JetBrains Mono", monospace;
+    color: #c0c0c0;
 }
 
-header{
-    display: flex;
-    height: 45px;
-    /*position: fixed;*/
-    color: white;
-}
-header nav ul{
-    display: flex;
-    margin-left: 50%;
-    list-style: none;
-    background-color: #13293D;
+#navbar{
     position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
 }
 
-header nav ul li{
-    padding-left: 10%;
-}
-
-header a{
+#navbar a {
+    float: left;
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color: #18435A;
+    font-size: 45px;
+}
 
+#navbar a:hover {
+    background: #90ff91;
+    color: black;
+}
+
+main{
+
+    background-image: linear-gradient(#061d00, #000000);
 }
 
 section{
     height: 100vh;
-    border: 1px solid grey;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +50,18 @@ section{
     font-size: 1.5rem;
 }
 
+.bold-highlight{
+    margin-left: 25px;
+    font-size: 70px;
+    font-weight: bold;
+    color: #DCD7C9;
+
+}
+
+#auto-type{
+    color: #DCD7C9;
+}
+
 footer {
     line-height: 40px;
     display: flex;
@@ -54,14 +69,17 @@ footer {
     font-size: 1rem;
 }
 
+/*Scroll bar*/
+::-webkit-scrollbar {
+    width: 15px;
+}
 
-/* Sections */
-#intro {
-    background-color: #058C42;
+::-webkit-scrollbar-track {
+    background:  #F1EFEF;
+    border-radius: 10px;
 }
-#about{
-    background-color: #13293D;
-}
-#contact{
-    background-color: rgba(170, 255, 187, 0.58);
+
+::-webkit-scrollbar-thumb {
+    background: #3d3d3d;
+    border-radius: 10px;
 }

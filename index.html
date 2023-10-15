@@ -7,30 +7,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="#intro">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<div id="navbar">
+    <a href="#intro">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</div>
 <main>
     <section id="intro">
         <div class="Container">
-            <h1>My name is Alexander Oroudjev</h1>
-        </div>
-        <div>
-            <h1>I am a <span id="auto-type"></span></h1>
+            <h2>My name is <span class="bold-highlight">Alexander Oroudjev</span></h2>
+            <div>
+                <h1>I am a <span id="auto-type"></span></h1>
+            </div>
         </div>
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         <script>
             var typed = new Typed("#auto-type", {
-                strings: ['student', 'programmer', 'creative thinker', 'bioinformatician', 'biochemist',],
+                strings: ['student.', 'programmer.', 'creative thinker.', 'bioinformatician.', 'biochemist.',],
                 typeSpeed: 50,
                 backSpeed: 50,
-                loop: true
+                loop: true,
             })
         </script>
     </section>
@@ -42,7 +38,6 @@
             <ul>
                 <li>Biochemistry -> Bioinformatics -> ?</li>
                 <li>Software Engineer enthusiast</li>
-                <li>GATE AIR 01</li>
             </ul>
         </div>
     </section>
