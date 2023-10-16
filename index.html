@@ -10,21 +10,39 @@
 <div id="navbar">
     <a href="#intro">Home</a>
     <a href="#about">About</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
     <a href="#contact">Contact</a>
 </div>
 <main>
     <section id="intro">
-        <div class="Container">
-            <h2>My name is <span class="bold-highlight">Alexander Oroudjev</span></h2>
+        <div class="intro_container">
+            <h1>My name is <span class="bold-highlight">Alexander Oroudjev</span></h1>
             <div>
-                <h1>I am a <span id="auto-type"></span></h1>
+                <h2>I am a <span id="auto-type"> </span></h2>
             </div>
+            <p>"Understanding why software fails is important, but the real challenge is understanding why software
+                works. - Alexander Stepanov</p>
         </div>
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         <script>
             var typed = new Typed("#auto-type", {
-                strings: ['student.', 'programmer.', 'creative thinker.', 'bioinformatician.', 'biochemist.',],
-                typeSpeed: 50,
+                strings: [
+                    'learner.',
+                    'programmer.',
+                    'creative thinker.',
+                    'bioinformatician.',
+                    'biochemist.',
+                    'hard worker.',
+                    'good friend :).',
+                    'gamer.',
+                    'swimmer.',
+                    'team player.',
+                    'designer.',
+                    '....'
+                ],
+                typeSpeed: 80,
                 backSpeed: 50,
                 loop: true,
             })
@@ -32,13 +50,61 @@
     </section>
 
     <section id="about">
+        <h1>About Me</h1>
         <div class="container">
-            <h1>About Me</h1>
-            <p>Alex is the name and programming is the game. Let's get to know me quick and dirty.</p>
-            <ul>
-                <li>Biochemistry -> Bioinformatics -> ?</li>
-                <li>Software Engineer enthusiast</li>
-            </ul>
+            <p>
+                Alex is the name and programming is the game. Let's get to know me quick and dirty. I'm a coding
+                connoisseur, a tech enthusiast, and a problem-solving wizard.</p>
+            <p>
+                But don't let the binary digits fool you; I'm not all 1s and 0s. I'm a human behind the code, fueled by
+                coffee, curiosity, and a passion for innovation. I was born and raised in sunny Santa Barbara. Here I
+                met and made personal connections with friends and colleagues. Along my way I picked up several <a
+                    href="#hobbies">hobbies</a> including hiking, swimming, cars, music, coding, digital art, and 3D
+                printing.</p>
+            <p>
+                I have completed my <a href="#education">education</a> background starting in my hometown. Gaining my
+                first exposure to various subjects in Santa Barbara City College. It was there that I got my first taste
+                of both computer science and bio/chemistry. I obtained my Bachelor in Biochemistry under the Chemistry
+                department at University of California Santa Barbara. Working throughout all of my years of high school
+                and college career I have acquired a number of skills.</p>
+        </div>
+    </section>
+
+    <section id="hobbies">
+
+        <div class="container">
+            <img src="Images/monitor.png" width="50" alt="monitor icon">
+            <p>
+                <span class="bold-highlight">Coding:</span> I have been interested in coding since a fairly small age
+                when I was able to get my hands on technology. I began my programming experience in high school where I
+                began to understand the limitlessness of code. I now have many <a href="#projects">projects</a> that
+                show my variety of skills.
+
+            </p>
+        </div>
+        <div class="container">
+            <img src="">
+            <p>
+                Hobby 2: I enjoy this hobby and this hobby enjoys me. Perhaps others can enjoy this hobby!
+            </p>
+        </div>
+        <div class="container">
+            <img src="">
+            <p>
+                Hobby 3: I enjoy this hobby and this hobby enjoys me. Perhaps others can enjoy this hobby!
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h1>Personal Projects</h1>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h1>Education</h1>
         </div>
     </section>
 
@@ -56,7 +122,13 @@
 
 </main>
 <footer>
-    <p>© Copyright 2023 Alex O.</p>
+    <div class="footer">
+        <p>© Copyright 2023 Alex O.</p>
+    </div>
+    <div class="footer">
+        <p>All assets are by me with some inspiration taken from free online resources.</p>
+    </div>
+
 </footer>
 </body>
 </html>
