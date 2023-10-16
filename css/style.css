@@ -1,11 +1,32 @@
+/*html properties*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*Scroll bar*/
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dad7cd;
+    border-radius: 10px;
+}
+
+/*sections*/
 *{
     padding: 0;
     margin: 0;
     font-family: "JetBrains Mono", monospace;
-    color: #c0c0c0;
+    color: #ffff;
     font-size: 1em;
-}
 
+}
+/*nav bar*/
 #navbar{
     background-color: black;
     position: fixed;
@@ -17,20 +38,21 @@
 #navbar a {
     float: left;
     display: flex;
-    color: #f2f2f2;
+    color: #75dfb2;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 2em;
+    transition: background, color, 0.5s;
 }
 
 #navbar a:hover {
-    background: #90ff91;
+    background: #75dfb2;
     color: black;
 }
 
+/*parallax effect*/
 main{
-
-    background-image: linear-gradient(#061d00, #000000);
+    background-color: #000;
 }
 
 section{
@@ -38,55 +60,67 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px;
 }
 
-.Container h1{
+/*intro container*/
+.intro_container h1{
+    justify-content: center;
     margin-top: 2%;
     font-size: 3em;
     display: flex;
-    justify-content: center;
 }
 
-.Container h2{
+.intro_container h2{
     margin-top: 2%;
     font-size: 2em;
     display: flex;
     justify-content: center;
 }
-.Container p, ul{
-    margin-top: 2%;
+.intro_container p{
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 15%;
     font-size: 1.5rem;
 }
 
-.container{
+/*sections*/
+#intro
 
+
+/*individual containers in each section*/
+.container{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
 }
 
 .container h1 {
-    display: flex;
-    font-size: 45px;
+    font-size: 3em;
     text-decoration: underline;
     justify-content: center;
     margin-bottom: 100px;
 }
 
+.container p{
 
-.bold-highlight{
-    margin-left: 20px;
-    font-weight: bold;
-    color: #90ff91;
-    font-size: 1em;
+    padding: 10px;
+    font-size: 1.5em;
+    transition: color 0.5s;
 }
 
-#auto-type{
-    color: #90ff91;
-    margin-left: 20px;
+.container p:hover {
+    color:#75dfb2;
 }
 
+.container img{
+    justify-content: center;
+}
+
+/*footer*/
 footer {
     line-height: 40px;
-    display: flex;
-    justify-content: center;
     font-size: 1rem;
     background-color: black;
     position: fixed;
@@ -94,17 +128,19 @@ footer {
     width: 100%;
 }
 
-/*Scroll bar*/
-::-webkit-scrollbar {
-    width: 15px;
+.footer{
+    display: flex;
+    justify-content: center;
 }
 
-::-webkit-scrollbar-track {
-    background:  #F1EFEF;
-    border-radius: 10px;
+/*extras*/
+#auto-type{
+    color: #75dfb2;
+    margin-left: 20px;
 }
 
-::-webkit-scrollbar-thumb {
-    background: #3d3d3d;
-    border-radius: 10px;
+.bold-highlight{
+    margin-left: 20px;
+    font-weight: bold;
+    color: #75dfb2;
 }
