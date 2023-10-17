@@ -3,6 +3,141 @@ html{
     scroll-behavior: smooth;
 }
 
+/*sections*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "JetBrains Mono", monospace;
+    color: #ffff;
+    font-size: 1.2rem;
+}
+
+/*main elements*/
+main{
+    background-color: #000;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+footer {
+    font-size: 15px;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+input{
+    color: black;
+}
+select{
+    color: black;
+}
+option{
+    color: black;
+}
+textarea{
+    color: black;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+/*basic container*/
+.intro-header{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-header h1{
+    font-size: 5vw;
+}
+
+.intro-container{
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20%;
+}
+
+.container{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    max-width: 60rem;
+}
+
+.container h2{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.container p:hover {
+    color:#75dfb2;
+}
+
+/*content within containers*/
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/*extras*/
+#auto-type{
+    color: #75dfb2;
+    font-size: 5vw;
+}
+
+.bold-highlight{
+    font-weight: bold;
+    color: #75dfb2;
+}
+
+.v-bar {
+    width: 1px;
+    background-color: #75dfb2;
+}
+
+#intro-name{
+    font-size: 4vw;
+}
+
+/*nav bar*/
+#navbar{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 2s;
+
+}
+
+#navbar a {
+    display: flex;
+    color: #75dfb2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2vw;
+    transition: background, color, 0.5s;
+}
+
+#navbar a:hover {
+    background: #75dfb2;
+    color: black;
+}
+
 /*Scroll bar*/
 ::-webkit-scrollbar {
     width: 15px;
@@ -17,130 +152,4 @@ html{
     border-radius: 10px;
 }
 
-/*sections*/
-*{
-    padding: 0;
-    margin: 0;
-    font-family: "JetBrains Mono", monospace;
-    color: #ffff;
-    font-size: 1em;
 
-}
-/*nav bar*/
-#navbar{
-    background-color: black;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: top 2s;
-}
-
-#navbar a {
-    float: left;
-    display: flex;
-    color: #75dfb2;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 2em;
-    transition: background, color, 0.5s;
-}
-
-#navbar a:hover {
-    background: #75dfb2;
-    color: black;
-}
-
-/*parallax effect*/
-main{
-    background-color: #000;
-}
-
-section{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-}
-
-/*intro container*/
-.intro_container h1{
-    justify-content: center;
-    margin-top: 2%;
-    font-size: 3em;
-    display: flex;
-}
-
-.intro_container h2{
-    margin-top: 2%;
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
-}
-.intro_container p{
-    justify-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 15%;
-    font-size: 1.5rem;
-}
-
-/*sections*/
-
-/*TODO: Add individual sections for custom format*/
-
-/*individual containers in each section*/
-.container{
-    padding: 5%;
-    display: flex;
-    justify-content: center;
-}
-
-.container h1 {
-    font-size: 3em;
-    text-decoration: underline;
-    justify-content: center;
-    margin-bottom: 100px;
-}
-
-.container p{
-
-    padding: 10px;
-    font-size: 1.5em;
-    transition: color 0.5s;
-}
-
-.container p:hover {
-    color:#75dfb2;
-}
-
-.container img{
-    justify-content: center;
-}
-
-/*footer*/
-footer {
-    line-height: 40px;
-    font-size: 1rem;
-    background-color: black;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer{
-    display: flex;
-    justify-content: center;
-}
-
-/*extras*/
-#auto-type{
-    color: #75dfb2;
-    margin-left: 20px;
-}
-
-.bold-highlight{
-    margin-left: 20px;
-    font-weight: bold;
-    color: #75dfb2;
-}
