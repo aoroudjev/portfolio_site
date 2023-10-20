@@ -1,155 +1,74 @@
-/*html properties*/
-html{
-    scroll-behavior: smooth;
-}
-
-/*sections*/
 *{
-    padding: 0;
+    font-family: "JetBrains Mono", sans-serif;
+    text-wrap: normal;
+    transition: top 2s;
+}
+
+body{
     margin: 0;
-    font-family: "JetBrains Mono", monospace;
-    color: #ffff;
-    font-size: 1.2rem;
 }
 
-/*main elements*/
-main{
-    background-color: #000;
-}
-
-section{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-}
-
-footer {
-    font-size: 15px;
-    background-color: black;
+footer{
+    margin-left: 150px;
+    width: 100%;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    font-size: 12px;
+    line-height: 10px;
 }
 
-input{
-    color: black;
-}
-select{
-    color: black;
-}
-option{
-    color: black;
-}
-textarea{
-    color: black;
+#main{
+    margin-left: 150px;
 }
 
-footer p{
-    font-size: 15px;
-}
-
-/*basic container*/
-.intro-header{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.intro-header h1{
-    font-size: 5vw;
-}
-
-.intro-container{
-    max-width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20%;
-}
-
-.container{
-    align-content: center;
-    justify-content: center;
-    display: flex;
-    margin: auto;
-    max-width: 60rem;
-}
-
-.container h2{
-    font-size: 3rem;
-    text-decoration: underline;
-}
-
-.container p:hover {
-    color:#75dfb2;
-}
-
-/*content within containers*/
-.content{
+#left-bar {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-left: 2%;
-    padding-right: 2%;
+    font-size: 24px;
+    height: 100%;
+    width: 150px;
+    background-color: black;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto;
 }
 
-/*extras*/
-#auto-type{
-    color: #75dfb2;
-    font-size: 5vw;
-}
-
-.bold-highlight{
-    font-weight: bold;
-    color: #75dfb2;
-}
-
-.v-bar {
-    width: 1px;
-    background-color: #75dfb2;
-}
-
-#intro-name{
-    font-size: 4vw;
-}
-
-/*nav bar*/
-#navbar{
-    display: flex;
+#top-bar{
+    display: none;
     justify-content: center;
     background-color: black;
     position: fixed;
     top: 0;
     width: 100%;
-    transition: top 2s;
-
+    opacity: 50%;
 }
 
-#navbar a {
+.navbar a{
     display: flex;
-    color: #75dfb2;
-    padding: 14px 16px;
+    justify-content: center;
     text-decoration: none;
-    font-size: 2vw;
-    transition: background, color, 0.5s;
 }
 
-#navbar a:hover {
+.navbar a:hover {
     background: #75dfb2;
     color: black;
 }
 
-/*Scroll bar*/
-::-webkit-scrollbar {
-    width: 15px;
+.main-container {
+    margin-left: 120px
 }
 
-::-webkit-scrollbar-track {
-    background: black;
+/* Small screen properties */
+@media only screen and (max-width: 600px) {
+    #main {
+        margin-left: 0
+    }
+    #top-bar{
+        display: flex;
+    }
+    #left-bar{
+        display: none;
+    }
+    footer{margin-left: 0}
+
 }
-
-::-webkit-scrollbar-thumb {
-    background: #dad7cd;
-    border-radius: 10px;
-}
-
-
