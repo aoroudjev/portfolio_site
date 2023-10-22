@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="css/style.css">
     <title>Alex O. Portfolio</title>
 </head>
@@ -28,15 +29,106 @@
 </div>
 
 <!--Page Container-->
-<div class="main">
-    <header id="home"> My name is Alexander Oroudjev</header>
-</div>
+<div id="main">
+    <div class="container" id="home">
+        <h1>Alex Oroudjev</h1>
+        <h2>I am a <span id="auto-type"></span></h2>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed("#auto-type", {
+                strings: [
+                    'learner.',
+                    'programmer.',
+                    'creative thinker.',
+                    'bioinformatician.',
+                    'biochemist.',
+                    'hard worker.',
+                    'good friend. :)',
+                    'gamer.',
+                    'swimmer.',
+                    'team player.',
+                    'designer.',
+                    '....'
+                ],
+                typeSpeed: 80,
+                backSpeed: 50,
+                loop: true,
+            })
+        </script>
+        <hr style="width: 30%">
+        <i style="margin-left: 10%">"Understanding why software fails is important, but the real challenge is
+            understanding
+            why software works. - Alexander Stepanov</i>
+    </div>
+    <!-- About Me -->
+    <div class="container" id="about">
+        <h2 style="margin:auto">About Me</h2>
+        <hr style="width: 30%">
+        <p>
+            Alex is the name and programming is the game. Let's get to know me quick and dirty. I'm a coding
+            connoisseur, a tech enthusiast, and a problem-solving wizard.</p>
+        <p>
+            But don't let the binary digits fool you; I'm not all 1s and 0s. I'm a human behind the code, fueled
+            by coffee, curiosity, and a passion for innovation. I was born and raised in sunny Santa Barbara.
+            Here I met and made personal connections with friends and colleagues. Along my way I picked up
+            several <a href="#hobbies">hobbies</a> including hiking, swimming, cars, music, coding, digital art,
+            and 3D printing.</p>
+        <p>
+            I have completed my <a href="#education">education</a> background starting in my hometown gaining my
+            first exposure to various subjects in Santa Barbara City College. It was there that I got my first
+            taste of both computer science and bio/chemistry. I obtained my Bachelor in Biochemistry under the
+            Chemistry department at University of California Santa Barbara. Working throughout all of my years
+            of high school and college career I have acquired a number of skills.</p>
+    </div>
+    <!-- Hobbies -->
+    <div class="container" id="hobbies">
+        <h2>Hobbies</h2>
+        <hr style="width: 30%">
+        <div class="content-group">
+            <div class="content">
+                <img src="Images/monitor.png" width="10%" alt="monitor icon">
+                <h3>Coding: </h3>
+                I have been interested in coding since a fairly
+                small age when I was able to get my hands on technology. I began my programming experience in
+                high school where I began to understand the limitlessness of code. I now have many <a
+                    href="#projects">projects</a> that show my variety of skills.
+            </div>
+            <hr style="height: 30%" class="content-sep">
+            <div class="content">
+                <img src="Images/paintbrush.png" width="10%" alt="brush icon">
+                <h3>Design/Images:</h3>
+                One of my interests lays within the art
+                department. While I do not consider myself an exemplary artist, I think my experience at thsi
+                point has left me with not only robust knowledge but also appreciation of the fine arts. I do
+                not showcase my work usually as it is generally used for my own personal interests but you can
+                find some of my media on my <a href="https://photos.app.goo.gl/dp3m5zsZJinoND2U7">photos
+                album</a> or my instagram.
+            </div>
+            <div class="content">
+                Hobby3
+            </div>
+        </div>
+    </div>
+    <!-- Projects -->
+    <div class="container" id="projects">
 
+    </div>
+    <!-- Education -->
+    <div class="container" id="education">
+
+    </div>
+    <!-- Contact -->
+    <div class="container" id="contact">
+
+    </div>
+
+
+</div>
 
 
 </body>
 <footer>
-    <p>© Copyright 2023 Alex Oroudjev</p>
-    <p>All assets are by me with some inspiration taken from free online resources.</p>
+    <p>© Copyright 2023 Alexander Oroudjev</p>
+    <p>Website and assets are all by me with some inspiration taken from free online resources.</p>
 </footer>
 </html>
