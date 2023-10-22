@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--
+Author: Alexander Oroudjev
+Date last updated: 10/16/23
+
+Description: This is my online portfolio site. The site itself along with any and all assets were designed by me. Feel
+free to use anything you find here.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex O. Portfolio</title>
+    <link rel="stylesheet" href="css/style_old.css">
+</head>
+<body>
+<nav id="navbar">
+    <a href="#intro">Home</a>
+    <a href="#about">About</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
+<main>
+    <div>
+        <section id="intro">
+            <div class="intro-header">
+                <h1>My name is <span class="bold-highlight" id="intro-name">Alexander Oroudjev</span></h1>
+            </div>
+            <div class="intro-header">
+                <h1>I am a <span id="auto-type"></span></h1>
+            </div>
+            <div class="intro-container">
+                <p id="quote">"Understanding why software fails is important, but the real challenge is understanding why
+                    software works. - Alexander Stepanov</p>
+            </div>
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed("#auto-type", {
+                    strings: [
+                        'learner.',
+                        'programmer.',
+                        'creative thinker.',
+                        'bioinformatician.',
+                        'biochemist.',
+                        'hard worker.',
+                        'good friend :).',
+                        'gamer.',
+                        'swimmer.',
+                        'team player.',
+                        'designer.',
+                        '....'
+                    ],
+                    typeSpeed: 80,
+                    backSpeed: 50,
+                    loop: true,
+                })
+            </script>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+            </div>
+
+            <div class="container">
+                <p>
+                    Alex is the name and programming is the game. Let's get to know me quick and dirty. I'm a coding
+                    connoisseur, a tech enthusiast, and a problem-solving wizard.</p>
+            </div>
+            <div class="container">
+                <p>
+                    But don't let the binary digits fool you; I'm not all 1s and 0s. I'm a human behind the code, fueled by
+                    coffee, curiosity, and a passion for innovation. I was born and raised in sunny Santa Barbara. Here I
+                    met and made personal connections with friends and colleagues. Along my way I picked up several <a
+                        href="#hobbies">hobbies</a> including hiking, swimming, cars, music, coding, digital art, and 3D
+                    printing.</p>
+            </div>
+            <div class="container">
+                <p>
+                    I have completed my <a href="#education">education</a> background starting in my hometown gaining my
+                    first exposure to various subjects in Santa Barbara City College. It was there that I got my first taste
+                    of both computer science and bio/chemistry. I obtained my Bachelor in Biochemistry under the Chemistry
+                    department at University of California Santa Barbara. Working throughout all of my years of high school
+                    and college career I have acquired a number of skills.</p>
+            </div>
+
+        </section>
+
+        <section id="hobbies">
+            <div class="container">
+                <h2>Top Hobbies</h2>
+            </div>
+
+            <div class="container">
+                <div class="content">
+                    <img src="Images/monitor.png" width="10%" alt="monitor icon">
+                    <p>
+                        <span class="bold-highlight">Coding:</span> I have been interested in coding since a fairly small
+                        age
+                        when I was able to get my hands on technology. I began my programming experience in high school
+                        where I
+                        began to understand the limitlessness of code. I now have many <a href="#projects">projects</a> that
+                        show my variety of skills.
+                    </p>
+                </div>
+                <div class="v-bar"></div>
+                <div class="content">
+                    <img src="Images/paintbrush.png" width="10%" alt="brush icon">
+                    <p>
+                        <span class="bold-highlight">Design/Images:</span> One of my interests lays within the art
+                        department. While I do not consider myself an exemplary artist, I think my experience at thsi point
+                        has left me with not only robust knowledge but also appreciation of the fine arts. I do not showcase
+                        my work usually as it is generally used for my own personal interests but you can find some of my
+                        media on my <a href="https://photos.app.goo.gl/dp3m5zsZJinoND2U7">photos album</a> or my instagram.
+
+                    </p>
+                </div>
+                <div class="v-bar"></div>
+                <div class="content">
+                    <img src="Images/monitor.png" width="10%" alt="monitor icon">
+                    <p>
+                        <span class="bold-highlight">Coding:</span> I have been interested in coding since a fairly small
+                        age
+                        when I was able to get my hands on technology. I began my programming experience in high school
+                        where I
+                        began to understand the limitlessness of code. I now have many <a href="#projects">projects</a> that
+                        show my variety of skills.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Personal Projects</h2>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="container">
+                <h2>Education</h2>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact me</h2>
+            </div>
+            <div class="container">
+                <p>Please feel free to reach out.</p>
+            </div>
+            <div class="container">
+
+                <ul>
+                    <li><a href="mailto: a.oroudjev@gmail.com">Email[a.oroudjev@gmail.com]</a></li>
+                    <li><a href="https://www.linkedin.com/in/alexander-oroudjev-89ba5a1a0/">LinkedIn</a></li>
+                    <li><a href="https://github.com/aoroudjev">Github</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <form>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        </section>
+    </div>
+
+</main>
+<footer>
+    <p>© Copyright 2023 Alex Oroudjev</p>
+    <p>All assets are by me with some inspiration taken from free online resources.</p>
+</footer>
+</body>
+</html>
