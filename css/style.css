@@ -1,21 +1,30 @@
 html{
     scroll-behavior: smooth;
     word-wrap: normal;
+    background-color: black;
 }
 
 *{
     font-family: "Montserrat", sans-serif;
-    background-color: black;
-    color: white;
+    /*background-color: black;*/
+    color: #f5f0f6;
     text-wrap: normal;
 }
 
 body{
     margin: 0;
+    background-image: url("./background.png");
+    /*background-blend-mode: overlay;*/
 }
 
 h1, h2{
     margin: auto;
+    font-size: larger;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 footer{
@@ -34,6 +43,7 @@ footer{
     flex-direction: column;
     margin-left: 150px;
     transition: 1s;
+
 }
 
 .container{
@@ -45,20 +55,24 @@ footer{
     padding-top: 100px;
     padding-bottom: 100px;
     height:100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
 }
 
 .content-group{
     display: flex;
+    align-items: center;
 }
 
 .content-sep{
-    height: 30%;
+    height: 400px;
 }
 
 .content{
-    border-radius: 10px;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    margin: auto;
     padding: 20px;
 }
 
@@ -68,19 +82,18 @@ footer{
     flex-direction: column;
     height: 100%;
     width: 150px;
-    background-color: black;
     position: fixed!important;
+    background-color: rgba(0,0,0,0.84);
 }
 
 #left-bar a{
     padding: 18%;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 #top-bar{
     display: none;
     justify-content: center;
-    background-color: black;
     position: fixed;
     top: 0;
     width: 100%;
@@ -89,7 +102,7 @@ footer{
 
 #top-bar a{
     padding: 1%;
-    font-size: 12px;
+    font-size: 3vw;
 }
 
 .navbar a{
@@ -100,8 +113,8 @@ footer{
 }
 
 .navbar a:hover {
-    background: #75dfb2;
-    color: black;
+    background: #FFBC00;
+    color: #0d1321;
 }
 
 /*Scroll bar*/
@@ -118,7 +131,10 @@ footer{
     border-radius: 10px;
 }
 
-
+/* Auto typer */
+#auto-type{
+    color: #FFBC00;
+}
 
 /* Small screen properties */
 @media only screen and (max-width: 600px) {
